@@ -1,15 +1,25 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 import "./layout.scss"
 
 const Layout = ({ children }) => {
+  const [isTop, setIsTop] = useState(false)
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setIsTop(window.scrollY <= 0)
+    })
+  }, [])
+
   return (
     <>
       <header>
         <nav
-          className="navbar is-white is-fixed-top"
+          className={
+            "navbar is-transparent is-fixed-top main-navbar " +
+            (isTop ? "is-top" : "not-top")
+          }
           role="navigation"
           aria-label="main navigation"
         >
