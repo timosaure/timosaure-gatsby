@@ -11,6 +11,8 @@ const Layout = ({ children }) => {
       setIsTop(window.scrollY <= 0)
     })
   }, [])
+  
+  const [isMenuOpen, setMenuOpen] = useState(false)
 
   return (
     <>
@@ -30,10 +32,11 @@ const Layout = ({ children }) => {
 
             <a
               role="button"
-              className="navbar-burger"
+              className={"navbar-burger " + (isMenuOpen ? "is-active" : "")}
               aria-label="menu"
               aria-expanded="false"
               data-target="main-navbar-items"
+              onClick={() => setMenuOpen(!isMenuOpen)}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
@@ -41,7 +44,10 @@ const Layout = ({ children }) => {
             </a>
           </div>
 
-          <div id="main-navbar-items" className="navbar-menu">
+          <div
+            id="main-navbar-items"
+            className={"navbar-menu " + (isMenuOpen ? "is-active" : "")}
+          >
             <div className="navbar-start">
               <Link className="navbar-item" to="/about">
                 About
