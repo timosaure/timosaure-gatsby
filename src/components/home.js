@@ -1,6 +1,7 @@
 import React from "react"
 
-import './home.scss'
+import "./home.scss"
+import Portfolio from "./portfolio/portfolio"
 
 const Home = () => (
   <>
@@ -14,14 +15,7 @@ const Home = () => (
         </div>
       </div>
     </section>
-    <section className="hero is-info is-fullheight">
-      <div className="hero-body">
-        <div className="container has-text-centered">
-          <h1 className="title">Timo Saure</h1>
-          <h2 className="subtitle">Software Engineer</h2>
-        </div>
-      </div>
-    </section>
+    <Portfolio />
   </>
 )
 
