@@ -11,8 +11,14 @@ const Layout = ({ children }) => {
       setIsTop(window.scrollY <= 0)
     })
   }, [])
-  
+
   const [isMenuOpen, setMenuOpen] = useState(false)
+
+  const handleKeyUp = event => {
+    if (event.key === "Enter") {
+      setMenuOpen(!isMenuOpen)
+    }
+  }
 
   return (
     <>
@@ -36,7 +42,9 @@ const Layout = ({ children }) => {
               aria-label="menu"
               aria-expanded="false"
               data-target="main-navbar-items"
+              tabIndex={0}
               onClick={() => setMenuOpen(!isMenuOpen)}
+              onKeyUp={handleKeyUp}
             >
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
