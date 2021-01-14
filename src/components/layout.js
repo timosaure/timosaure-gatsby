@@ -5,12 +5,14 @@ import { Link } from "gatsby"
 import "./layout.scss"
 
 const Layout = ({ children }) => {
-  const [isTop, setIsTop] = useState(false)
+  const checkIfTop = () => window.scrollY <= 0
+
+  const [isTop, setIsTop] = useState(checkIfTop())
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setIsTop(window.scrollY <= 0)
+      setIsTop(checkIfTop())
     })
-  }, [])
+  })
 
   const [isMenuOpen, setMenuOpen] = useState(false)
 
