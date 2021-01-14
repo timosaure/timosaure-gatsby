@@ -3,6 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import PortfolioItem from "./portfolio_item"
+import "./portfolio.scss"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`
@@ -11,6 +12,7 @@ const Portfolio = () => {
         edges {
           node {
             company
+            timeframe
             position
             bulletPoints
             logo {
@@ -32,7 +34,14 @@ const Portfolio = () => {
 
   return (
     <section className="section">
-      <div className="container is-max-desktop">{rows}</div>
+      <div className="container is-max-desktop">
+        <div className="columns mb-5">
+          <div className="column is-offset-one-quarter is-three-quarters">
+            <h1 className="title">Portfolio</h1>
+          </div>
+        </div>
+        {rows}
+      </div>
     </section>
   )
 }
