@@ -1,20 +1,22 @@
 [
   {
     "company": "Airbus",
+    "timeframe": "2018 - now",
     "position": "Software engineer",
     "logo": "../images/company_logos/airbus.png",
-    "bulletPoints" : [
-        "Technical lead for a test analyis and evaluation tool",
-        "Designed and developed a BigData system to handle >100 Billion data points"
+    "bulletPoints": [
+      "Technical lead for a test analyis and evaluation tool",
+      "Designed and developed a BigData system to handle >100 Billion data points"
     ]
   },
   {
     "company": "University of Stuttgart",
+    "timeframe": "2014 - 2018",
     "position": "B.Sc. Aeronautical and Aerospace Engineering",
     "logo": "../images/company_logos/university_stuttgart.png",
-    "bulletPoints" : [
-        "Teaching assistant for the computer science course",
-        "Developed a scientific software for evaluation of experiment data"
+    "bulletPoints": [
+      "Teaching assistant for the computer science course",
+      "Developed a scientific software for evaluation of experiment data"
     ]
   }
 ]
