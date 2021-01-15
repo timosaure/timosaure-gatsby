@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import SocialLink from "./social_link"
+
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { faGithubAlt, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 
@@ -8,15 +9,12 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        <a className="button social-link">
-          <FontAwesomeIcon icon={faGithubAlt} />
-        </a>
-        <a className="button social-link">
-          <FontAwesomeIcon icon={faLinkedinIn} />
-        </a>
-        <a className="button social-link">
-          <FontAwesomeIcon icon={faEnvelope} />
-        </a>
+        <SocialLink icon={faGithubAlt} href="https://github.com/timosaure" />
+        <SocialLink
+          icon={faLinkedinIn}
+          href="https://www.linkedin.com/in/timosaure"
+        />
+        <SocialLink icon={faEnvelope} href="/contact" />
       </div>
     </footer>
   )
