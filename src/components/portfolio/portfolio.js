@@ -3,7 +3,6 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import PortfolioItem from "./portfolio_item"
-import "./portfolio.scss"
 
 const Portfolio = () => {
   const data = useStaticQuery(graphql`

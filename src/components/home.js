@@ -1,6 +1,5 @@
 import React from "react"
 
-import "./home.scss"
 import Portfolio from "./portfolio/portfolio"
 
 const Home = () => (

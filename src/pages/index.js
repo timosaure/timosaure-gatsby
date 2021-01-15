@@ -3,7 +3,7 @@ import Home from "../components/home"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "./styles.scss"
+import "../scss/styles.scss"
 
 const IndexPage = () => (
   <Layout>
