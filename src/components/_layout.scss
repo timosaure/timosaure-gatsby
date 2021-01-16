@@ -24,16 +24,16 @@
 .social-link.social-link {
   background-color: transparent;
   font-size: 1.5rem;
-  color: $primary;
+  color: $white;
   border-radius: 100%;
   margin: 0 0.2rem;
   height: 3.5rem;
   width: 3.5rem;
-  border: 2px solid #5e937c;
+  border: 2px solid $white;
 
   &:hover {
-    color: white;
-    border-color: #5e937c;
-    background-color: #5e937c;
+    color: $primary;
+    border-color: $white;
+    background-color: $white;
   }
 }
