@@ -34,9 +34,8 @@ const Header = () => {
             <span className="logo">TIMO</span>
           </Link>
 
-          <button
+          <a
             className={"navbar-burger " + (isMenuOpen ? "is-active" : "")}
-            style={{ border: "none" }}
             aria-label="menu"
             aria-expanded="false"
             data-target="main-navbar-items"
@@ -47,7 +46,7 @@ const Header = () => {
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </button>
+          </a>
         </div>
 
         <div
