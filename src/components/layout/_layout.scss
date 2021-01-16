@@ -1,0 +1,39 @@
+.main-content {
+  flex: 1;
+}
+
+.logo {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #5e937c;
+}
+
+.main-navbar {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.not-top {
+  background-color: white !important;
+  box-shadow: 1px 0 10px 0 rgba(89, 98, 115, 0.2);
+}
+.is-top {
+  background-color: transparent !important;
+}
+
+.social-link.social-link {
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: $white;
+  border-radius: 100%;
+  margin: 0 0.2rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 2px solid $white;
+
+  &:hover {
+    color: $primary;
+    border-color: $white;
+    background-color: $white;
+  }
+}
