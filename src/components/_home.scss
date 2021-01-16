@@ -1,13 +1,33 @@
 .main-title {
-    font-size: 4rem;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: bold;
-    color: #5e937c;
-    margin-bottom: 1.5rem;
+  font-size: 4rem;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: bold;
+  color: $white-ter;
+  margin-bottom: 1.5rem;
 }
 
 .main-subtitle {
-    font-size: 2rem;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 500;
+  font-size: 2rem;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  color: $white-ter;
+}
+
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background-image {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
