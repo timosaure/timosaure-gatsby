@@ -9,7 +9,7 @@ const IndexPage = () => (
     <SEO title="Contact" />
     <section className="section">
       <div className="container is-max-desktop">
-        <div className="has-text-centered">
+        <div className="has-text-centered  mt-6 mb-5">
           <h1 className="title">Contact</h1>
         </div>
         <ContactForm />
