@@ -2,3 +2,9 @@
 @import "~bulma/bulma.sass";
 @import "../fonts/hind_siliguri/stylesheet.css";
 @import "../components/all";
+
+#gatsby-focus-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
