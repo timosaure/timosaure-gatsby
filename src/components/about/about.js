@@ -59,17 +59,19 @@ const About = () => {
     <section className="section">
       <div className="container is-max-desktop">
         <h1 className="title has-text-centered">About</h1>
-        <div className="columns portfolio-item-row">
+        <div className="columns mb-6">
           <div className="column is-6">
             <Image image={data.allDataJson.edges[0].node.portrait} />
           </div>
           <div className="column is-6 content">{sections}</div>
         </div>
-        <section className="content">
+        <hr />
+        <section className="content mb-6">
           <h2 className="title is-4">Skills</h2>
           {skills}
         </section>
-        <section className="content">
+        <hr />
+        <section className="content mb-6">
           <h2 className="title is-4">Also in my skillset..</h2>
           <OtherSkillItems
             skills={data.allDataJson.edges[0].node.other_skills}
