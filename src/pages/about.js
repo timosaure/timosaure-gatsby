@@ -3,7 +3,6 @@ import About from "../components/about/about"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import "../scss/styles.scss"
 
 const AboutPage = () => (
   <Layout>
