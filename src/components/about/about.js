@@ -62,11 +62,11 @@ const About = () => {
           </div>
           <div className="column is-6 content">{sections}</div>
         </div>
-        <section className="section">
+        <section className="content">
           <h2 className="title is-4">Skills</h2>
           {skills}
         </section>
-        <section className="section">
+        <section className="content">
           <h2 className="title is-4">Also in my skillset..</h2>
           <OtherSkillItems
             skills={data.allDataJson.edges[0].node.other_skills}
