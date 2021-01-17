@@ -57,12 +57,6 @@ const Header = () => {
             <Link className="navbar-item" to="/about">
               About
             </Link>
-            <Link className="navbar-item" to="/projects">
-              Projects
-            </Link>
-            <Link className="navbar-item" to="/skills">
-              Skills
-            </Link>
           </div>
         </div>
       </nav>
