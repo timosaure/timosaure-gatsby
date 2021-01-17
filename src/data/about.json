@@ -20,13 +20,36 @@
     }
   ],
   "other_skills": [
-    "../images/skills/nodejs.png",
-    "../images/skills/vuejs.png",
-    "../images/skills/angular.png",
-    "../images/skills/kotlin.svg",
-    "../images/skills/maven.png",
-    "../images/skills/ansible.svg",
-    "../images/skills/hadoop.png",
-    "../images/skills/postgres.svg"
+    { "image": "../images/skills/nodejs.png", "url": "https://nodejs.org/" },
+    { "image": "../images/skills/vuejs.png", "url": "https://vuejs.org/" },
+    { "image": "../images/skills/angular.png", "url": "https://angular.io/" },
+    {
+      "image": "../images/skills/kotlin.svg",
+      "url": "https://kotlinlang.org/"
+    },
+    {
+      "image": "../images/skills/maven.png",
+      "url": "https://maven.apache.org/"
+    },
+    {
+      "image": "../images/skills/ansible.svg",
+      "url": "https://www.ansible.com/"
+    },
+    {
+      "image": "../images/skills/hadoop.png",
+      "url": "https://hadoop.apache.org/"
+    },
+    {
+      "image": "../images/skills/postgres.svg",
+      "url": "https://postgresql.org/"
+    },
+    {
+      "image": "../images/skills/python.png",
+      "url": "https://www.python.org/"
+    },
+    {
+      "image": "../images/skills/gwt.png",
+      "url": "http://www.gwtproject.org/"
+    }
   ]
 }

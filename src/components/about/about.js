@@ -31,12 +31,15 @@ const About = () => {
               description
             }
             other_skills {
-              childImageSharp {
-                fixed(height: 48) {
-                  ...GatsbyImageSharpFixed
+              image {
+                childImageSharp {
+                  fixed(height: 48) {
+                    ...GatsbyImageSharpFixed
+                  }
                 }
+                publicURL
               }
-              publicURL
+              url
             }
             sections
           }

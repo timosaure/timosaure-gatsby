@@ -4,9 +4,9 @@ import Image from "../image"
 
 const OtherSkillItems = ({ skills }) => {
   const columns = skills.map((skill, index) => (
-    <div key={index} className="p-3">
-      <Image image={skill} className="other-skill-logo" />
-    </div>
+    <a key={index} className="p-3" href={skill.url}>
+      <Image image={skill.image} className="other-skill-logo" />
+    </a>
   ))
 
   return (
