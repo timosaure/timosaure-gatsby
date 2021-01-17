@@ -2,6 +2,7 @@ import React from "react"
 
 import { useStaticQuery, graphql } from "gatsby"
 
+import Image from "../image"
 import SkillItem from "./skill_item"
 import OtherSkillItems from "./other_skill_items"
 
@@ -11,6 +12,13 @@ const About = () => {
       allDataJson {
         edges {
           node {
+            portrait {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             skills {
               logo {
                 childImageSharp {
@@ -48,7 +56,12 @@ const About = () => {
     <section className="section">
       <div className="container is-max-desktop">
         <h1 className="title has-text-centered">About</h1>
-        <div className="content">{sections}</div>
+        <div className="columns portfolio-item-row">
+          <div className="column is-6">
+            <Image image={data.allDataJson.edges[0].node.portrait} />
+          </div>
+          <div className="column is-6 content">{sections}</div>
+        </div>
         <div className="content">{skills}</div>
         <div className="content">
           <OtherSkillItems
