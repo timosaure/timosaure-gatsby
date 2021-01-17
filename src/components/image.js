@@ -2,11 +2,15 @@ import React from "react"
 
 import Img from "gatsby-image"
 
-const Image = ({ image }) => {
+const Image = ({ image, className }) => {
   if (image.childImageSharp) {
-    return <Img fluid={image.childImageSharp.fluid} />
+    if (image.childImageSharp.fluid) {
+      return <Img className={className} fluid={image.childImageSharp.fluid} />
+    } else {
+      return <Img className={className} fixed={image.childImageSharp.fixed} />
+    }
   } else {
-    return <img src={image.publicURL} />
+    return <img className={className} src={image.publicURL} />
   }
 }
 
