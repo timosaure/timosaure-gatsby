@@ -2,11 +2,21 @@
   {
     "company": "Airbus",
     "timeframe": "2018 - now",
-    "position": "Software engineer",
+    "position": "Software Engineer",
     "logo": "../images/company_logos/airbus.png",
     "bulletPoints": [
       "Technical lead for a test analyis and evaluation tool",
       "Designed and developed a BigData system to handle >250 Billion data points"
+    ]
+  },
+  {
+    "company": "Airbus",
+    "timeframe": "October 2017 - March 2018",
+    "position": "Intership Software Engineer",
+    "logo": "../images/company_logos/airbus.png",
+    "bulletPoints": [
+      "Researched and tested different big data processing technologies against requirements",
+      "Developed a proof-of-concept for the realtime processing of data from satellite tests"
     ]
   },
   {
