@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 const Header = () => {
-  const checkIfTop = () => window.scrollY <= 0
+  const [isTop, setIsTop] = useState(0)
 
-  const [isTop, setIsTop] = useState(checkIfTop())
   useEffect(() => {
+    const checkIfTop = () => window.scrollY <= 0
     window.addEventListener("scroll", () => {
       setIsTop(checkIfTop())
     })
