@@ -3,6 +3,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import SkillItem from "./skill_item"
+import OtherSkillItems from "./other_skill_items"
 
 const About = () => {
   const data = useStaticQuery(graphql`
@@ -21,7 +22,14 @@ const About = () => {
               }
               description
             }
-            other_skills
+            other_skills {
+              childImageSharp {
+                fixed(height: 48) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+              publicURL
+            }
             sections
           }
         }
@@ -42,6 +50,11 @@ const About = () => {
         <h1 className="title has-text-centered">About</h1>
         <div className="content">{sections}</div>
         <div className="content">{skills}</div>
+        <div className="content">
+          <OtherSkillItems
+            skills={data.allDataJson.edges[0].node.other_skills}
+          />
+        </div>
       </div>
     </section>
   )

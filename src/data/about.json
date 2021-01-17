@@ -10,7 +10,7 @@
       "description": "I've used Java in everything from small home projects to large scale big data processing systems. It is my favorite language for everything non trivial on the backend"
     },
     {
-      "logo": "../images/skills/react.svg",
+      "logo": "../images/skills/react.png",
       "description": "React's simple and painless way of writing frontend code makes it my preferred choice for UI development. The site you're viewing right now was created with it. I've also worked with Angular and Vue in the past."
     },
     {
@@ -19,13 +19,13 @@
     }
   ],
   "other_skills": [
-    "nodejs.png",
-    "vuejs.png",
-    "angular.png",
-    "kotlin.png",
-    "maven.png",
-    "ansible.png",
-    "hadoop.png",
-    "postgres.png"
+    "../images/skills/nodejs.png",
+    "../images/skills/vuejs.png",
+    "../images/skills/angular.png",
+    "../images/skills/kotlin.svg",
+    "../images/skills/maven.png",
+    "../images/skills/ansible.svg",
+    "../images/skills/hadoop.png",
+    "../images/skills/postgres.svg"
   ]
 }
