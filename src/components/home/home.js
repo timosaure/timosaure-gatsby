@@ -31,7 +31,7 @@ const Home = () => {
             <h2 className="main-subtitle">Data Engineer</h2>
           </div>
         </div>
-        <div className="banner-down-arrow is-size-2">
+        <div className="banner-down-arrow">
           <FontAwesomeIcon icon={faChevronDown} />
         </div>
         <div className="background-image-container">

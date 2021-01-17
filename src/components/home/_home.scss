@@ -39,4 +39,9 @@
   width: 100%;
   text-align: center;
   color: $white-ter;
+  font-size: 2.5rem;
+
+  svg {
+    max-height: 2.5rem;
+  }
 }
