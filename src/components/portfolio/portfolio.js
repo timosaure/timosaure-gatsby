@@ -35,7 +35,7 @@ const Portfolio = () => {
     <section className="section">
       <div className="container is-max-desktop">
         <div className="columns mb-5">
-          <div className="column is-offset-one-quarter is-three-quarters">
+          <div className="column is-offset-one-third is-three-quarters">
             <h1 className="title">Portfolio</h1>
           </div>
         </div>
