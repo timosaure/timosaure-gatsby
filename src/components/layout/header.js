@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 const Header = () => {
-  const [isTop, setIsTop] = useState(0)
+  const [isTop, setIsTop] = useState(true)
 
   useEffect(() => {
     const checkIfTop = () => window.scrollY <= 0
