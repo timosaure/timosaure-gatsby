@@ -3,9 +3,9 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons"
 
-const ContactForm = () => {
+const ContactForm = ({ successPath }) => {
   return (
-    <form name="Contact" method="POST" data-netlify="true">
+    <form name="Contact" method="POST" data-netlify="true" action={successPath}>
       <input type="hidden" name="form-name" value="Contact" />
       <FormInput name="name" label="Name" type="text" icon={faUser} />
       <FormInput name="mail" label="Email" type="email" icon={faEnvelope} />
