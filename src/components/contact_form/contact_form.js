@@ -5,7 +5,8 @@ import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons"
 
 const ContactForm = () => {
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="Contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="Contact" />
       <FormInput name="name" label="Name" type="text" icon={faUser} />
       <FormInput name="mail" label="Email" type="email" icon={faEnvelope} />
       <div class="field">
