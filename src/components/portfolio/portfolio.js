@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import PortfolioItem from "./portfolio_item"
 
-const Portfolio = () => {
+const Portfolio = ({ id }) => {
   const data = useStaticQuery(graphql`
     query {
       allPortfolioJson {
@@ -32,7 +32,7 @@ const Portfolio = () => {
   ))
 
   return (
-    <section className="section">
+    <section className="section" id={id}>
       <div className="container is-max-desktop">
         <div className="columns mb-5">
           <div className="column is-offset-one-third is-three-quarters">

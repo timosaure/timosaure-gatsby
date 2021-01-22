@@ -31,9 +31,9 @@ const Home = () => {
             <h2 className="main-subtitle">Data Engineer</h2>
           </div>
         </div>
-        <div className="banner-down-arrow">
+        <a href="#main" className="banner-down-arrow">
           <FontAwesomeIcon icon={faChevronDown} />
-        </div>
+        </a>
         <div className="background-image-container">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
@@ -41,7 +41,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <Portfolio />
+      <Portfolio id="main" />
     </>
   )
 }

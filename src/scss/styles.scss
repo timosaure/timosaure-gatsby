@@ -8,3 +8,8 @@
   min-height: 100vh;
   flex-direction: column;
 }
+
+html {
+  scroll-padding-top: 3.25rem; // when jumping to anchors add padding because of header
+  scroll-behavior: smooth; //smooth scroll to anchors
+}
