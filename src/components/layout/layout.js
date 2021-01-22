@@ -8,7 +8,9 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main className="main-content">{children}</main>
+      <main className="main-content is-flex is-flex-direction-column">
+        {children}
+      </main>
       <Footer />
     </>
   )
