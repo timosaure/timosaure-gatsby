@@ -4,31 +4,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import PortfolioItem from "./portfolio_item"
 
-const Portfolio = ({ id }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      allPortfolioJson {
-        edges {
-          node {
-            company
-            timeframe
-            position
-            bulletPoints
-            logo {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const rows = data.allPortfolioJson.edges.map((edge, index) => (
-    <PortfolioItem key={index} item={edge.node} />
+const Portfolio = ({ id, items }) => {
+  const rows = items.map((edge, index) => (
+    <PortfolioItem key={index} item={edge} />
   ))
 
   return (

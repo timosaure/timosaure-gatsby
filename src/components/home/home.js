@@ -7,7 +7,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 
 import Portfolio from "../portfolio/portfolio"
 
-const Home = () => {
+const Home = ({ portfolioItems }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "typing_background.jpg" }) {
@@ -41,7 +41,7 @@ const Home = () => {
           />
         </div>
       </section>
-      <Portfolio id="main" />
+      <Portfolio id="main" items={portfolioItems} />
     </>
   )
 }

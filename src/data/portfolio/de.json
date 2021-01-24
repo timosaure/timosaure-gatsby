@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "company": "Airbus",
+      "timeframe": "2018 - jetzt",
+      "position": "Software Ingenieur",
+      "logo": "../../images/company_logos/airbus.png",
+      "bulletPoints": [
+        "Technische Leitung für eine Applikation zur Analyse und Auswertung von Tests",
+        "Design und Entwicklung von einem BigData System das >250 Milliarden Datenpunkte verarbeitet"
+      ]
+    },
+    {
+      "company": "Airbus",
+      "timeframe": "Oktober 2017 - März 2018",
+      "position": "Praktikum Software Ingenieur",
+      "logo": "../../images/company_logos/airbus.png",
+      "bulletPoints": [
+        "Recherche und Test verschiedener BigData Technologien anhand von Anforderungen",
+        "Entwicklung eines Proof-of-Concept für die Echtzeitverarbeitung von Satellitentests"
+      ]
+    },
+    {
+      "company": "Universität Stuttgart",
+      "timeframe": "2014 - 2018",
+      "position": "B.Sc. Luft- und Raumfahrttechnik",
+      "logo": "../../images/company_logos/university_stuttgart.png",
+      "bulletPoints": [
+        "Tutor für den Softwareentwicklungskurs",
+        "Entwicklung einer wissenschaftlichen Software zur Analyse von Experimentdaten"
+      ]
+    }
+  ]
+}
