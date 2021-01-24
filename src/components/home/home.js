@@ -10,9 +10,9 @@ import Portfolio from "../portfolio/portfolio"
 const Home = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "typing_background.png" }) {
+      placeholderImage: file(relativePath: { eq: "typing_background.jpg" }) {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(quality: 100, maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }
