@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
+import { Link, useTranslation } from "gatsby-plugin-react-i18next"
 
 const Header = () => {
+  const { t } = useTranslation()
+
   const [isTop, setIsTop] = useState(true)
 
   useEffect(() => {
@@ -55,7 +57,7 @@ const Header = () => {
         >
           <div className="navbar-start">
             <Link className="navbar-item" to="/about">
-              About
+              {t("about")}
             </Link>
           </div>
         </div>
