@@ -5,77 +5,37 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "../image"
 import SkillItem from "./skill_item"
 import OtherSkillItems from "./other_skill_items"
+import { useTranslation } from "gatsby-plugin-react-i18next"
 
-const About = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allDataJson {
-        edges {
-          node {
-            portrait {
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            skills {
-              logo {
-                childImageSharp {
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-                publicURL
-              }
-              description
-            }
-            other_skills {
-              image {
-                childImageSharp {
-                  fixed(height: 48) {
-                    ...GatsbyImageSharpFixed
-                  }
-                }
-                publicURL
-              }
-              url
-            }
-            sections
-          }
-        }
-      }
-    }
-  `)
+const About = ({ data }) => {
+  const { t } = useTranslation()
 
-  const sections = data.allDataJson.edges[0].node.sections.map(
-    (section, index) => <p key={index}>{section}</p>
-  )
-  const skills = data.allDataJson.edges[0].node.skills.map((skill, index) => (
+  const sections = data.sections.map((section, index) => (
+    <p key={index}>{section}</p>
+  ))
+  const skills = data.skills.map((skill, index) => (
     <SkillItem key={index} skill={skill} />
   ))
 
   return (
     <section className="section">
       <div className="container is-max-desktop">
-        <h1 className="title has-text-centered">About</h1>
+        <h1 className="title has-text-centered">{t("about")}</h1>
         <div className="columns mb-6">
           <div className="column is-6">
-            <Image image={data.allDataJson.edges[0].node.portrait} />
+            <Image image={data.portrait} />
           </div>
           <div className="column is-6 content">{sections}</div>
         </div>
         <hr />
         <section className="content mb-6">
-          <h2 className="title is-4">Skills</h2>
+          <h2 className="title is-4">{t("skills")}</h2>
           {skills}
         </section>
         <hr />
         <section className="content mb-6">
-          <h2 className="title is-4">Also in my skillset..</h2>
-          <OtherSkillItems
-            skills={data.allDataJson.edges[0].node.other_skills}
-          />
+          <h2 className="title is-4">{t("otherSkills")}.</h2>
+          <OtherSkillItems skills={data.other_skills} />
         </section>
       </div>
     </section>

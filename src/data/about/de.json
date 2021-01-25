@@ -1,0 +1,58 @@
+{
+  "portrait": "../../images/profile_landscape.png",
+  "sections": [
+    "Hi, ich heiße Timo. Ich bin Softwareingenieur aus Deutschland und lebe im Moment am Bodensee. Ich arbeite bei Airbus, dort kann ich täglich meine Faszination für Technologie ausleben.",
+    "Ich entwickle Enterprise Software für die schnelle Analyse und Evaluation von Business Daten. Dadurch ermögliche ich es früh im Produktlebenzyklus Probleme zu erkennen, um Zeit und Geld zu sparen.",
+    "In meiner Freizeit bastle ich an Heimprojekten oder erkunde die Welt mit meiner Frau. Außerdem probiere ich immer gerne neues Essen, insbesondere wenn ich im Ausland bin."
+  ],
+  "skills": [
+    {
+      "logo": "../../images/skills/java.svg",
+      "description": "Ich benutze Java für alles, von kleinen Heimprojekten zu komplexen BigData Systemen. Es ist meine Lieblingssprache für alles nicht-triviale im Backend"
+    },
+    {
+      "logo": "../../images/skills/react.png",
+      "description": "React's einfache und elegante Art Frontend code zu schreiben, macht es zu meiner ersten Wahl für UI Entwicklung. Diese Website wurde mit React erstellt. In meiner Vergangenheit habe ich außerdem an Projekten mit Vue und Angular gearbeitet."
+    },
+    {
+      "logo": "../../images/skills/docker.png",
+      "description": "Docker ist mein Favorit für die Verwaltung und das Deployment meiner Applikationen. Gemeinsam mit docker-compose oder Kubernetes erlaubt es mir einfach meine Microservice basierte Architektur zu managen."
+    }
+  ],
+  "other_skills": [
+    { "image": "../../images/skills/nodejs.png", "url": "https://nodejs.org/" },
+    { "image": "../../images/skills/vuejs.png", "url": "https://vuejs.org/" },
+    {
+      "image": "../../images/skills/angular.png",
+      "url": "https://angular.io/"
+    },
+    {
+      "image": "../../images/skills/kotlin.svg",
+      "url": "https://kotlinlang.org/"
+    },
+    {
+      "image": "../../images/skills/maven.png",
+      "url": "https://maven.apache.org/"
+    },
+    {
+      "image": "../../images/skills/ansible.svg",
+      "url": "https://www.ansible.com/"
+    },
+    {
+      "image": "../../images/skills/hadoop.png",
+      "url": "https://hadoop.apache.org/"
+    },
+    {
+      "image": "../../images/skills/postgres.svg",
+      "url": "https://postgresql.org/"
+    },
+    {
+      "image": "../../images/skills/python.png",
+      "url": "https://www.python.org/"
+    },
+    {
+      "image": "../../images/skills/gwt.png",
+      "url": "http://www.gwtproject.org/"
+    }
+  ]
+}
