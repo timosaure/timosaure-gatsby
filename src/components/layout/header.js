@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react"
-import { Link, useTranslation } from "gatsby-plugin-react-i18next"
+import { Link, useI18next } from "gatsby-plugin-react-i18next"
 
 const Header = () => {
-  const { t } = useTranslation()
-
   const [isTop, setIsTop] = useState(true)
 
   useEffect(() => {
@@ -20,6 +18,23 @@ const Header = () => {
       setMenuOpen(!isMenuOpen)
     }
   }
+
+  const { t, language, languages, originalPath } = useI18next()
+
+  const languageLinks = languages.map(lng => {
+    return (
+      <Link
+        key={lng}
+        className={
+          "navbar-item " + (lng === language ? "has-text-primary" : "")
+        }
+        language={lng}
+        to={originalPath}
+      >
+        {lng}
+      </Link>
+    )
+  })
 
   return (
     <header>
@@ -60,6 +75,8 @@ const Header = () => {
               {t("about")}
             </Link>
           </div>
+
+          <div className="navbar-end">{languageLinks}</div>
         </div>
       </nav>
     </header>
