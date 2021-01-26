@@ -2,16 +2,18 @@ import React from "react"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons"
+import { useTranslation } from "react-i18next"
 
 const ContactForm = ({ successPath }) => {
+  const { t } = useTranslation()
   return (
     <form name="Contact" method="POST" data-netlify="true" action={successPath}>
       <input type="hidden" name="form-name" value="Contact" />
-      <FormInput name="name" label="Name" type="text" icon={faUser} />
-      <FormInput name="mail" label="Email" type="email" icon={faEnvelope} />
+      <FormInput name="name" label={t("name")} type="text" icon={faUser} />
+      <FormInput name="mail" label={t("mail")} type="email" icon={faEnvelope} />
       <div className="field">
         <label className="label" htmlFor="message-input">
-          Message
+          {t("message")}
         </label>
         <div className="control">
           <textarea
@@ -24,7 +26,7 @@ const ContactForm = ({ successPath }) => {
       </div>
       <div className="control">
         <button type="submit" className="button is-primary">
-          Submit
+          {t("submit")}
         </button>
       </div>
     </form>

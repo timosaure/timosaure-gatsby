@@ -6,21 +6,19 @@ import SEO from "../../components/seo"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { withTranslation } from "gatsby-plugin-react-i18next"
 
-const IndexPage = () => (
+const IndexPage = ({ t }) => (
   <Layout>
     <SEO title="Message sent" />
     <div className="is-flex is-flex-direction-column is-flex-grow-1 is-justify-content-center is-align-content-center">
-      <section class="hero is-primary mt-6 has-text-centered">
-        <div class="hero-body">
-          <div class="container">
-            <h1 class="title">Thank you for contacting me</h1>
-            <h2 class="subtitle">
-              I appreciate that you've taken the time to write me. I will get
-              back to you as soon as possible.
-            </h2>
+      <section className="hero is-primary mt-6 has-text-centered">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">{t("thanks_title")}</h1>
+            <h2 className="subtitle">{t("thanks_text")}</h2>
             <Link className="subtitle" to="/">
-              Go back home <FontAwesomeIcon icon={faArrowRight} />
+              {t("back_home")} <FontAwesomeIcon icon={faArrowRight} />
             </Link>
           </div>
         </div>
@@ -29,4 +27,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default withTranslation()(IndexPage)

@@ -1,5 +1,16 @@
 {
   "about": "Über mich",
+  "contact": "Kontakt",
+  "name": "Name",
+  "mail": "Email",
+  "message": "Nachricht",
+  "submit": "Senden",
+  "thanks_title": "Danke für die Nachricht",
+  "thanks_text": "Ich werde mich sobald wie möglich zurückmelden.",
+  "back_home": "Zurück zur Homepage",
   "skills": "Kompetenzen",
-  "otherSkills": "Weitere Kompetenzen.."
+  "otherSkills": "Weitere Kompetenzen..",
+  "profession_one": "Software Ingenieur",
+  "profession_two": "Full Stack Developer",
+  "profession_three": "Daten Ingenieur"
 }
