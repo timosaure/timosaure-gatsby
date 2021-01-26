@@ -9,21 +9,21 @@ const ContactForm = ({ successPath }) => {
       <input type="hidden" name="form-name" value="Contact" />
       <FormInput name="name" label="Name" type="text" icon={faUser} />
       <FormInput name="mail" label="Email" type="email" icon={faEnvelope} />
-      <div class="field">
-        <label class="label" htmlFor="message-input">
+      <div className="field">
+        <label className="label" htmlFor="message-input">
           Message
         </label>
-        <div class="control">
+        <div className="control">
           <textarea
             id="message-input"
             name="message"
-            class="textarea"
+            className="textarea"
             placeholder="Textarea"
           ></textarea>
         </div>
       </div>
-      <div class="control">
-        <button type="submit" class="button is-primary">
+      <div className="control">
+        <button type="submit" className="button is-primary">
           Submit
         </button>
       </div>
@@ -46,7 +46,7 @@ const FormInput = ({ name, type, label, icon }) => {
           className="input"
           placeholder={label}
         />
-        <span class="icon is-small is-left">
+        <span className="icon is-small is-left">
           <FontAwesomeIcon icon={icon} />
         </span>
       </div>
