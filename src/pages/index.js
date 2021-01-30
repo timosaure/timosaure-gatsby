@@ -1,6 +1,7 @@
 import { graphql } from "gatsby"
 import React from "react"
 import Home from "../components/home/home"
+import Offer from "../components/offer/offer"
 
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
@@ -12,6 +13,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Home portfolioItems={portfolioItems} />
+      <Offer />
     </Layout>
   )
 }

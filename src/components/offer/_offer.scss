@@ -1,0 +1,10 @@
+.offer-card {
+  flex: 0 0 20rem;
+  min-width: 20rem;
+  background-color: $primary;
+  color: $white-ter;
+
+  .title {
+    color: $white-ter;
+  }
+}
