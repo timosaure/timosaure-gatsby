@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('subset-HindSiliguri-Bold.woff2') format('woff2'),
+        url('subset-HindSiliguri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('subset-HindSiliguri-Light.woff2') format('woff2'),
+        url('subset-HindSiliguri-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('subset-HindSiliguri-Medium.woff2') format('woff2'),
+        url('subset-HindSiliguri-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('subset-HindSiliguri-Regular.woff2') format('woff2'),
+        url('subset-HindSiliguri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hind Siliguri';
+    src: url('subset-HindSiliguri-SemiBold.woff2') format('woff2'),
+        url('subset-HindSiliguri-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
