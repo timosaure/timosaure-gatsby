@@ -6,6 +6,7 @@ import Image from "../image"
 import SkillItem from "./skill_item"
 import OtherSkillItems from "./other_skill_items"
 import { useTranslation } from "gatsby-plugin-react-i18next"
+import Portfolio from "../portfolio/portfolio"
 
 const About = ({ data }) => {
   const { t } = useTranslation()
@@ -27,6 +28,8 @@ const About = ({ data }) => {
           </div>
           <div className="column is-6 content">{sections}</div>
         </div>
+        <hr />
+        <Portfolio items={data.portfolio} />
         <hr />
         <section className="content mb-6">
           <h2 className="title is-4">{t("skills")}</h2>

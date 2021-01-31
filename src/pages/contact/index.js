@@ -13,7 +13,7 @@ const IndexPage = ({ t }) => (
         <div className="has-text-centered  mt-6 mb-5">
           <h1 className="title">{t("contact")}</h1>
         </div>
-        <ContactForm successPath="/contact/success" />
+        <ContactForm name="Contact" successPath="/contact/success" />
       </div>
     </section>
   </Layout>

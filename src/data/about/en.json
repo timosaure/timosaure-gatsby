@@ -5,6 +5,38 @@
     "I build data centric enterprise applications, focused on analysing and evaluating data quickly. This allows detecting problems early on in the product cycle and saving time and money in the long run.",
     "In my free time I hack together small home projects and I love exploring the world together with my wife. I enjoy trying out new vegetarian food, especially when I'm abroad."
   ],
+  "portfolio": [
+    {
+      "company": "Airbus",
+      "timeframe": "2018 - now",
+      "position": "Software Engineer",
+      "logo": "../../images/company_logos/airbus.png",
+      "bulletPoints": [
+        "Technical lead for a test analyis and evaluation tool",
+        "Designed and developed a BigData system to handle >250 Billion data points"
+      ]
+    },
+    {
+      "company": "Airbus",
+      "timeframe": "October 2017 - March 2018",
+      "position": "Intership Software Engineer",
+      "logo": "../../images/company_logos/airbus.png",
+      "bulletPoints": [
+        "Researched and tested different big data processing technologies against requirements",
+        "Developed a proof-of-concept for the realtime processing of data from satellite tests"
+      ]
+    },
+    {
+      "company": "University of Stuttgart",
+      "timeframe": "2014 - 2018",
+      "position": "B.Sc. Aeronautical and Aerospace Engineering",
+      "logo": "../../images/company_logos/university_stuttgart.png",
+      "bulletPoints": [
+        "Teaching assistant for the computer science course",
+        "Developed a scientific software for evaluation of experiment data"
+      ]
+    }
+  ],
   "skills": [
     {
       "logo": "../../images/skills/java.svg",

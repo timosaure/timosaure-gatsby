@@ -27,6 +27,19 @@ export const query = graphql`
                 }
               }
             }
+            portfolio {
+              company
+              timeframe
+              position
+              bulletPoints
+              logo {
+                childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
             skills {
               logo {
                 childImageSharp {
