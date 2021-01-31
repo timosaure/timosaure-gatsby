@@ -20,16 +20,12 @@ const Offer = ({ id, offerItems }) => {
 }
 
 const Card = ({ content }) => (
-  <div className="card offer-card">
-    <div className="card-content">
-      <div className="media">
-        <div className="media-left">
-          <FontAwesomeIcon className="image is-40x40" icon={content.icon} />
-        </div>
-        <div className="media-content is-clipped is-align-self-center">
-          <p className="title is-5">{content.title}</p>
-        </div>
-      </div>
+  <div className="offer-card">
+    <div className="card-icon">
+      <FontAwesomeIcon className="icon" icon={content.icon} />
+    </div>
+    <div className="content px-5 pb-5 pt-6">
+      <p className="title is-4">{content.title}</p>
       <div className="content">
         <p>{content.text}</p>
       </div>
