@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Home />
-      <Offer offerItems={offerItems} />
+      <Offer id="main" offerItems={offerItems} />
     </Layout>
   )
 }

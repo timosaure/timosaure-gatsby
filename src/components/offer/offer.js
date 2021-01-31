@@ -5,13 +5,13 @@ import Img from "gatsby-image"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import "../../data/offer/icon-import"
 
-const Offer = ({ offerItems }) => {
+const Offer = ({ id, offerItems }) => {
   const cards = offerItems.map((item, index) => (
     <Card key={index} content={item} />
   ))
 
   return (
-    <section className="section">
+    <section id={id} className="section">
       <div className="container is-max-desktop is-flex is-flex-direction-row is-flex-wrap-wrap is-justify-content-center">
         {cards}
       </div>
