@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "title": "Prioritizing people",
+      "icon": ["fas", "user-friends"],
+      "text": "Through fast iteration and close communication with you, I will build a solution that empowers you."
+    },
+    {
+      "title": "Reduce cost effectively",
+      "icon": ["fas", "coins"],
+      "text": "My focus during design and development is always reducing or eliminating cost for you."
+    },
+    {
+      "title": "Custom made for you",
+      "icon": ["fas", "flask"],
+      "text": "You know best what makes your business successful. By listening to your vison, I can build software tailored to your exact needs."
+    },
+    {
+      "title": "Cut manual processes",
+      "icon": ["fas", "tools"],
+      "text": "Reduce friction by cutting error prone manual processes. My priority is automating repetitive tasks to save your employees time"
+    },
+    {
+      "title": "Flexible pricing models",
+      "icon": ["fas", "tags"],
+      "text": "One time fee or monthly subscription. Together we will find a pricing model that fits your business."
+    },
+    {
+      "title": "Quality assurance",
+      "icon": ["fas", "clipboard-check"],
+      "text": "Digitalization delivers repeatable and consistent quality that your customers will appreciate."
+    }
+  ]
+}

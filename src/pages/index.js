@@ -7,20 +7,21 @@ import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
-  const portfolioItems = data.allFile.edges[0].node.childPortfolioJson.items
+  const portfolioItems = data.portfolio.edges[0].node.childPortfolioJson.items
+  const offerItems = data.offer.edges[0].node.childOfferJson.items
 
   return (
     <Layout>
       <SEO title="Home" />
       <Home portfolioItems={portfolioItems} />
-      <Offer />
+      <Offer offerItems={offerItems} />
     </Layout>
   )
 }
 
 export const query = graphql`
   query($language: String!) {
-    allFile(
+    portfolio: allFile(
       filter: {
         relativeDirectory: { eq: "portfolio" }
         name: { eq: $language }
@@ -41,6 +42,21 @@ export const query = graphql`
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+    offer: allFile(
+      filter: { relativeDirectory: { eq: "offer" }, name: { eq: $language } }
+    ) {
+      edges {
+        node {
+          childOfferJson {
+            items {
+              title
+              icon
+              text
             }
           }
         }

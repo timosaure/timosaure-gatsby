@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "title": "Ihr Unternehmen im Mittelpunkt",
+      "icon": ["fas", "user-friends"],
+      "text": "Durch schnelle Iteration und enge Kommunikation entwickle ich Software die Sie einfach und intuitiv unterstützt."
+    },
+    {
+      "title": "Kosten effektiv reduzieren",
+      "icon": ["fas", "coins"],
+      "text": "Damit sich Ihr Investment langfristig bezahlt macht, liegt mein Fokus immer auf der Reduzierung von Kosten für Ihr Unternehmen."
+    },
+    {
+      "title": "Maßgeschneiderte Lösungen",
+      "icon": ["fas", "flask"],
+      "text": "Sie wissen am besten was Ihr Unternehmen erfolgreich macht. Ich liefere eine maßgeschneiderte Lösung für Ihre Vision."
+    },
+    {
+      "title": "Automatisierung manueller Prozesse",
+      "icon": ["fas", "tools"],
+      "text": "Zusammen identifizieren wir manuelle Prozesse und automatisieren diese, um die wertvolle Zeit Ihrer Mitarbeiter optimal zu nutzen."
+    },
+    {
+      "title": "Flexible Preismodelle",
+      "icon": ["fas", "tags"],
+      "text": "Ob einmalige Entwicklung oder monatliches Rundumpaket, zusammen finden wir ein Modell, dass zu Ihren Anforderungen passt."
+    },
+    {
+      "title": "Zuverlassige Qualität",
+      "icon": ["fas", "clipboard-check"],
+      "text": "Digitalisierung liefert zuverlässige und gleichbleibende Qualität, die Ihre Kunden zu schätzen wissen."
+    }
+  ]
+}
