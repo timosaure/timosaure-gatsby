@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons"
 import { useTranslation } from "react-i18next"
 
-const ContactForm = ({ successPath }) => {
+const ContactForm = ({ name, successPath }) => {
   const { t } = useTranslation()
   return (
-    <form name="Contact" method="POST" data-netlify="true" action={successPath}>
-      <input type="hidden" name="form-name" value="Contact" />
+    <form name={name} method="POST" data-netlify="true" action={successPath}>
+      <input type="hidden" name="form-name" value={name} />
       <FormInput name="name" label={t("name")} type="text" icon={faUser} />
       <FormInput name="mail" label={t("mail")} type="email" icon={faEnvelope} />
       <div className="field">
