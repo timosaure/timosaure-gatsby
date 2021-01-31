@@ -27,7 +27,7 @@ const Card = ({ content }) => (
           <FontAwesomeIcon className="image is-40x40" icon={content.icon} />
         </div>
         <div className="media-content is-clipped is-align-self-center">
-          <p className="title is-4">{content.title}</p>
+          <p className="title is-5">{content.title}</p>
         </div>
       </div>
       <div className="content">
