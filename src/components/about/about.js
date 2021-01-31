@@ -29,7 +29,7 @@ const About = ({ data }) => {
           <div className="column is-6 content">{sections}</div>
         </div>
         <hr />
-        <Portfolio id="main" items={data.portfolio} />
+        <Portfolio items={data.portfolio} />
         <hr />
         <section className="content mb-6">
           <h2 className="title is-4">{t("skills")}</h2>
