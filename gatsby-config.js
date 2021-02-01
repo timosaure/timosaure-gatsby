@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.timosaure.com`,
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Timo Saure`,
+    description: `The home page of Timo Saure. Here you can find some info about me and my work.`,
+    author: `Timo Saure`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
