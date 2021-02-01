@@ -1,16 +1,32 @@
 .offer-card {
+  position: relative;
   flex: 0 0 300px;
   min-width: 300px;
   margin: 10px;
-  background-color: $primary;
-  color: $white-ter;
+  color: $primary;
+  border: 1px solid $primary;
 
   .title {
-    color: $white-ter;
+    color: $primary;
   }
 }
 
 .image.is-40x40 {
   height: 40px;
   width: 40px;
+}
+
+.card-icon {
+  color: $primary;
+  position: absolute;
+  height: 40px;
+  top: -20px;
+  right: 40px;
+
+  .icon {
+    height: 46px;
+    width: 46px;
+    padding: 3px;
+    background-color: white;
+  }
 }
