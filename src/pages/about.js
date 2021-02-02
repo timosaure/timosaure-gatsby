@@ -22,8 +22,8 @@ export const query = graphql`
           childAboutJson {
             portrait {
               childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid
+                fluid(quality: 90, webpQuality: 90, maxWidth: 600) {
+                  ...GatsbyImageSharpFluid_withWebp
                 }
               }
             }
