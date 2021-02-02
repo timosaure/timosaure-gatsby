@@ -8,13 +8,18 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="content has-text-centered">
-        <SocialLink icon={faGithub} href="https://github.com/timosaure" />
-        <SocialLink
-          icon={faLinkedinIn}
-          href="https://www.linkedin.com/in/timosaure"
-        />
-        <SocialLink icon={faEnvelope} href="/contact" />
+      <div className="content is-flex is-flex-direction-column is-align-items-center">
+        <div>
+          <SocialLink icon={faGithub} href="https://github.com/timosaure" />
+          <SocialLink
+            icon={faLinkedinIn}
+            href="https://www.linkedin.com/in/timosaure"
+          />
+          <SocialLink icon={faEnvelope} href="/contact" />
+        </div>
+        <p className="has-text-white mt-5">
+          Copyright Ⓒ <span>{new Date().getFullYear()}</span> Timo Saure
+        </p>
       </div>
     </footer>
   )
