@@ -13,8 +13,8 @@ const Home = () => {
     query {
       placeholderImage: file(relativePath: { eq: "typing_background.jpg" }) {
         childImageSharp {
-          fluid(quality: 100, maxWidth: 400) {
-            ...GatsbyImageSharpFluid
+          fluid(quality: 94, webpQuality: 100, maxWidth: 400) {
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

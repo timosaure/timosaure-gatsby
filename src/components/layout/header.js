@@ -26,7 +26,8 @@ const Header = () => {
       <Link
         key={lng}
         className={
-          "navbar-item " + (lng === language ? "has-text-primary" : "")
+          "navbar-item language-links " +
+          (lng === language ? "has-text-primary" : "")
         }
         language={lng}
         to={originalPath}
@@ -76,7 +77,9 @@ const Header = () => {
             </Link>
           </div>
 
-          <div className="navbar-end">{languageLinks}</div>
+          <div className="navbar-end">
+            <div className="is-flex is-flex-direction-row">{languageLinks}</div>
+          </div>
         </div>
       </nav>
     </header>

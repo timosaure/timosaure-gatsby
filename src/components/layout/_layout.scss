@@ -37,3 +37,9 @@
     background-color: $white;
   }
 }
+
+@include until($tablet) {
+  .language-links:not(:first-child) {
+    margin-left: 30px;
+  }
+}
