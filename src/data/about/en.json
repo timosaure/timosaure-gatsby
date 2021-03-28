@@ -63,6 +63,10 @@
       "url": "https://kotlinlang.org/"
     },
     {
+      "image": "../../images/skills/spring.svg",
+      "url": "https://spring.io/"
+    },
+    {
       "image": "../../images/skills/maven.png",
       "url": "https://maven.apache.org/"
     },
